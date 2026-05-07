@@ -33,7 +33,6 @@ def main():
     except FileNotFoundError:
         print("\nBrak pliku new_transactions.csv – pomijam klasyfikację nowych danych.")
 
-    # Interaktywny tryb
     print("\nTryb interaktywny – wpisz opis transakcji, a ja określę kategorię.")
     print("   (wpisz 'exit' aby zakończyć)")
 
