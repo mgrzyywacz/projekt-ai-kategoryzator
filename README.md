@@ -1,21 +1,34 @@
-# Python Template
+# Kategoryzator Wydatków – Drzewo Decyzyjne 
 
-[![python](https://img.shields.io/badge/Python-3.14-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
-[![ruff](https://github.com/wnowicki/pytemp/workflows/Ruff/badge.svg)](https://github.com/wnowicki/pytemp/actions?query=branch%3Amain)
-[![pytest](https://github.com/wnowicki/pytemp/workflows/Pytest/badge.svg)](https://github.com/wnowicki/pytemp/actions?query=branch%3Amain)
-[![pylint](https://github.com/wnowicki/pytemp/workflows/Pylint/badge.svg)](https://github.com/wnowicki/pytemp/actions?query=branch%3Amain)
-[![markdown](https://github.com/wnowicki/pytemp/workflows/Markdown%20Lint/badge.svg)](https://github.com/wnowicki/pytemp/actions?query=branch%3Amain)
-[![License: GPLv3](https://img.shields.io/badge/License-MIT-blue.svg)](https://license.md/licenses/mit-license/)
+## Opis projektu
 
-## Test
+Automatyczna klasyfikacja transakcji bankowych na kategorie:
+- **Jedzenie**
+- **Transport**
+- **Rozrywka**
+- **Rachunki**
 
-```shell
-uv run pytest
-```
+Projekt wykorzystuje **własną implementację drzewa decyzyjnego (algorytm ID3)** – bez użycia gotowych bibliotek ML takich jak scikit-learn, tensorflow czy pytorch.
 
-## Security
+## Główne funkcje
 
-If you discover any security-related issues, please email [email](mailto:email) instead of using the issue tracker.
+- Wczytywanie danych z pliku CSV
+- Trenowanie drzewa decyzyjnego na podstawie cech (kwota, długość opisu, słowa kluczowe)
+- Klasyfikacja nowych transakcji
+- Tryb interaktywny (wpisz opis i kwotę – program określi kategorię)
+- Testy jednostkowe (pytest)
 
----
-Copyright (c) [year] [fullname]
+## Technologie
+
+- Python 3.9+
+- numpy, pandas, matplotlib
+- pytest (testy)
+- pre-commit (jakość kodu)
+
+## Instalacja
+
+### 1. Sklonuj repozytorium
+
+```bash
+git clone https://github.com/mgrzyywacz/projekt-ai-kategoryzator.git
+cd projekt-ai-kategoryzator
