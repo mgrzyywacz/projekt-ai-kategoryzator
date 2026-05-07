@@ -1,7 +1,18 @@
 import pandas as pd
+import os
 
 def load_and_preprocess(filepath):
-    df = pd.read_csv(filepath)
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    project_dir = os.path.dirname(current_dir)
+    full_path = os.path.join(project_dir, filepath)
+
+    try:
+        df = pd.read_csv(full_path, encoding='utf-8')
+    except UnicodeDecodeError:
+        try:
+            df = pd.read_csv(full_path, encoding='latin-1')
+        except UnicodeDecodeError:
+            df = pd.read_csv(full_path, encoding='cp1250')
 
     df['kwota'] = df['kwota'].astype(float)
     df['dlugosc_opisu'] = df['opis'].apply(len)
