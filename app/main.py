@@ -2,6 +2,9 @@ import pandas as pd
 from app.decision_tree import DecisionTree
 from app.data_loader import load_and_preprocess, prepare_features_labels
 
+import os
+print("Bieżący katalog:", os.getcwd())
+
 def main():
     print("=" * 60)
     print("Kategoryzator Wydatków – Drzewo Decyzyjne (własna implementacja)")
@@ -11,7 +14,7 @@ def main():
     df_train = load_and_preprocess('data/transactions.csv')
     X_train, y_train, features = prepare_features_labels(df_train)
 
-    print("🌱 Trenowanie drzewa decyzyjnego")
+    print("Trenowanie drzewa decyzyjnego")
     tree = DecisionTree(max_depth=5, min_samples_split=5)
     tree.fit(X_train, y_train)
 
@@ -35,7 +38,7 @@ def main():
     print("   (wpisz 'exit' aby zakończyć)")
 
     while True:
-        opis = input("\n📝 Opis transakcji: ")
+        opis = input("\nOpis transakcji: ")
         if opis.lower() == 'exit':
             break
 
