@@ -5,7 +5,7 @@ from app.data_loader import load_and_preprocess, prepare_features_labels, prepro
 
 def main():
     print("=" * 60)
-    print("Kategoryzator Wydatków – Drzewo Decyzyjne (własna implementacja)")
+    print("Kategoryzator Wydatków – Drzewo Decyzyjne")
     print("=" * 60)
 
     print("\nWczytywanie danych treningowych")
