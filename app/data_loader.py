@@ -1,5 +1,7 @@
 import os
+
 import pandas as pd
+
 
 def preprocess_dataframe(df):
     df["kwota"] = df["kwota"].astype(float)

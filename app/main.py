@@ -1,8 +1,10 @@
-import sys
 import io
+import sys
+
 import pandas as pd
-from app.decision_tree import DecisionTree
+
 from app.data_loader import load_and_preprocess, prepare_features_labels, preprocess_dataframe
+from app.decision_tree import DecisionTree
 
 if sys.platform == "win32":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")

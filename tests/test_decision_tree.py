@@ -1,5 +1,7 @@
 import numpy as np
+
 from app.decision_tree import DecisionTree
+
 
 class TestDecisionTree:
     def test_entropy(self):

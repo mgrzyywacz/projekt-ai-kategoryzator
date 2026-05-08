@@ -1,5 +1,7 @@
 from collections import Counter
+
 import numpy as np
+
 
 class DecisionTree:
     def __init__(self, max_depth=None, min_samples_split=2):
