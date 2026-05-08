@@ -21,10 +21,10 @@ Przetestowano własną implementację drzewa decyzyjnego (algorytm ID3) na zbior
 **Przebieg testów:**
 
 1. Wczytanie danych z pliku `data/transactions.csv`
-2. Preprocessing danych (ekstrakcja cech: długość opisu, słowa kluczowe, kategoria kwoty)
-3. Trenowanie drzewa decyzyjnego na całym zbiorze
-4. Ocena dokładności na zbiorze treningowym
-5. Testy jednostkowe kluczowych funkcji (entropia, fit, predict, accuracy)
+1. Preprocessing danych (ekstrakcja cech: długość opisu, słowa kluczowe, kategoria kwoty)
+1. Trenowanie drzewa decyzyjnego na całym zbiorze
+1. Ocena dokładności na zbiorze treningowym
+1. Testy jednostkowe kluczowych funkcji (entropia, fit, predict, accuracy)
 
 ## 2. Uzyskane wyniki
 
@@ -37,6 +37,7 @@ Przetestowano własną implementację drzewa decyzyjnego (algorytm ID3) na zbior
 | Liczba błędnie sklasyfikowanych | 6 / 50 |
 
 ### Wyniki testów jednostkowych
+
 collected 3 items
 tests\test_decision_tree.py ... [100%]
 3 passed in 0.85s
