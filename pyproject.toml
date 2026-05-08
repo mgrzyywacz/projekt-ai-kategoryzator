@@ -1,7 +1,7 @@
 [project]
 name = "expense-categorizer"
+version = "0.1.0"
 description = "Automatyczna kategoryzacja wydatków z użyciem własnej implementacji drzewa decyzyjnego"
-dynamic = ["version"]
 requires-python = ">=3.9"
 dependencies = [
     "numpy>=1.24.0",
@@ -9,7 +9,7 @@ dependencies = [
     "matplotlib>=3.5.0",
 ]
 readme = "README.md"
-license = { file = "LICENSE.md" }
+license = { text = "MIT" }
 
 [project.urls]
 "Homepage" = "https://github.com/mgrzyywacz/projekt-ai-kategoryzator"
@@ -18,9 +18,18 @@ license = { file = "LICENSE.md" }
 [project.scripts]
 categorize = "app.main:main"
 
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
+exclude = ["data*", "tests*"]
+
 [tool.pytest.ini_options]
 minversion = "6.0"
-addopts = "-ra -q --cov=app --cov-report xml:coverage.xml --cov-report term"
+addopts = "-ra -q"
 testpaths = ["tests"]
 pythonpath = "."
 
