@@ -4,12 +4,13 @@
 
 ### Wymagania
 
-* Python 3.9 lub nowszy
+- Python 3.9 lub nowszy
 
 ### Krok 1: Sklonuj repozytorium
 
-`git clone https://github.com/mgrzyywacz/projekt-ai-kategoryzator.git`
-`cd projekt-ai-kategoryzator`
+```bash
+git clone https://github.com/mgrzyywacz/projekt-ai-kategoryzator.git
+cd projekt-ai-kategoryzator
 
 ### Zainstaluj zależności
 
@@ -28,3 +29,4 @@ Kategoria: Rozrywka
 ### Testy
 
 `python -m pytest tests/ -v`
+
