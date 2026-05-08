@@ -11,6 +11,7 @@
 ```bash
 git clone https://github.com/mgrzyywacz/projekt-ai-kategoryzator.git
 cd projekt-ai-kategoryzator
+```
 
 ### Zainstaluj zależności
 
@@ -29,4 +30,3 @@ Kategoria: Rozrywka
 ### Testy
 
 `python -m pytest tests/ -v`
-

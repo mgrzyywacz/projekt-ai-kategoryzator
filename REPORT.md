@@ -45,7 +45,6 @@ collected 3 items
 tests\test_decision_tree.py ... [100%]
 3 passed in 0.85s
 
-
 Testy jednostkowe potwierdzają poprawność:
 
 - `test_entropy` – poprawność obliczania entropii
@@ -77,7 +76,6 @@ Testy jednostkowe potwierdzają poprawność:
 - **Brak zbioru testowego** – dokładność mierzona tylko na treningowym (możliwe przeuczenie)
 - **Mała liczba danych** – 50 transakcji to za mało dla w pełni wiarygodnej oceny
 - **Brak walidacji krzyżowej** – nie sprawdzono stabilności modelu
-
 
 ### Podsumowanie końcowe
 
