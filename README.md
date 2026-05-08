@@ -17,7 +17,7 @@ cd projekt-ai-kategoryzator
 
 `pip install numpy pandas matplotlib`
 
-### Uruchom program 
+### Uruchom program
 
 `python -m app.main`
 

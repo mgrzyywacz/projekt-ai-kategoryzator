@@ -1,7 +1,3 @@
-
-## Poprawiony `REPORT.md`
-
-```markdown
 # Podsumowanie eksperymentu – Kategoryzator Wydatków
 
 ## 1. Opis przeprowadzonych testów
